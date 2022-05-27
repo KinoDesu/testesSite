@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Meow Meow Shop</title>
+    <link rel="icon" href="./img/patinhas.jpeg">
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="img/patinhas.jpeg">
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li><a href="https://www.instagram.com/_meowmeow_shop/" target="_blank"><img
+                                    src="img/Instagramlogo.jpeg"></a></li>
+                        <li><a href="https://www.tiktok.com/@nekogirl_meoww?lang=pt-BR" target="_blank"><img
+                                    src="img/Tiktoklogo.jpeg"></a></li>
+                    </ul>
+                </div>
+                <div class="nome-loja">
+                    <p><strong>Meow Meow</strong> shop</p>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="lojinha.html">Produtos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Teste</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Miau Miau" type="text">
+            </div>
+        </div>
+    </main>
+
+    <div class="col-100">
+        <div class="banner-principal">
+            <img src="./img/banner-teste.jpg">
+            <img src="./img/banner-teste.jpg">
+            <img src="./img/banner-teste.jpg">
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/banner-script.js"></script>
+
+    <div id="produtos">
+
+    </div>
+
+    <div id="carrinho">
+
+    </div>
+
+    <script>
+
+
+        var items = [
+            {
+                imagem: 'https://i.pinimg.com/564x/30/8a/20/308a20fca605c2ae0d506d502416bc63.jpg',
+                nome: 'Batom rosa',
+                texto: 'é um batom rosa',
+                quantidade: 0
+            },
+            {
+                imagem: 'https://i.pinimg.com/564x/77/5f/b1/775fb1ea57d34898a15829e976f325ac.jpg',
+                nome: 'Peruca rosa',
+                texto: 'é uma peruca rosa',
+                quantidade: 0
+            },
+            {
+                imagem: 'https://i.pinimg.com/564x/04/0b/a5/040ba5bc58207f57de9c708cb8fe93fc.jpg',
+                nome: 'Peruca Loira',
+                texto: 'é um peruca loira',
+                quantidade: 0
+            }
+        ]
+
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            items.map((val) => {
+                containerProdutos.innerHTML += `
+                <div class="produto-single">
+                    <img src="`+ val.imagem + `"/>
+                    <p>`+ val.nome + `</p>
+                    <a key="`+ val.id + `" href="#">Adicionar ao carrinho!</a>
+                </div>
+                `
+            })
+
+        }
+
+        inicializarLoja();
+
+        atualizarCarrinho = () => {
+            console.log(items);
+        }
+
+        var links = document.getElementsByTagName('a');
+
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+                let key = this.getAttribute('key');
+                items[key].quantidade++;
+                atualizarCarrinho();
+
+            })
+        }
+
+    </script>
+
+
+</body>
+
+</html>

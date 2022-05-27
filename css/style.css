@@ -1,0 +1,204 @@
+/*Importante fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    font-family: 'Lobster', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0px !important;
+}
+
+.menu-principal {
+    width: 90%;
+    background-color: pink;
+    height: 100px;
+    display: flex;
+    margin-left: 5%;
+    border-radius: 0px 0px 25px 25px;
+}
+
+main {
+    margin: 0px auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    margin-left: 5px;
+    padding-top: 20px;
+    float: left;
+}
+
+.redes-sociais ul li {
+
+    margin-left: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.redes-sociais {
+    margin-right: 5px;
+    width: auto;
+    float: right;
+}
+
+.redes-sociais ul li a img {
+    width: 30px;
+    padding-top: 15px;
+}
+
+.nome-loja {
+    height: 0px;
+    width: 100%;
+    position: static;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.header-2 {
+    background-color: rgb(250, 201, 255);
+    width: 700px;
+    height: 50px;
+    margin: 10px auto;
+    border-bottom: 3px solid rgba(255, 180, 232, 0.686);
+    border-radius: 25px;
+    display: flex;
+}
+
+.menu-urls {
+    height: 50px;
+    display: flex;
+
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu ul li a:hover {
+    text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 1px 1px rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
+
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: lowercase;
+}
+
+.menu {
+    width: 75%;
+    float: left;
+}
+
+.busca {
+    width: auto;
+    float: right;
+}
+
+.busca input {
+    border: none;
+    width: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 13px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: rgb(250, 223, 253);
+    box-shadow: rgb(128 0 128 / 40%) 0px 0px 10px 5px;
+    text-align: center;
+    display: flex;
+    margin-left: 0px;
+}
+
+.col-100 {
+    width: 100%;
+    float: left;
+}
+
+button.slick-prev {
+    cursor: pointer;
+    font-size: 0;
+    border: none;
+    width: 15.75%;
+    max-width: 30px;
+    max-height: 60px;
+    height: 50.75%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    background-image: url(../img/patagato.png);
+    top: 43%;
+    left: 15px;
+}
+
+button.slick-next {
+    cursor: pointer;
+    font-size: 0;
+    border: none;
+    width: 15.75%;
+    max-width: 30px;
+    max-height: 60px;
+    height: 50.75%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    background-image: url(../img/patagato.png);
+    top: 43%;
+    right: 15px;
+}
+
+
+.slick-slider {
+    margin-top: 25px;
+}
+
+.slick-dots {
+    cursor: pointer;
+    margin: -25px auto;
+    position: relative;
+    text-align: center;
+}
+
+ul.slick-dots li {
+    font-size: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/otapata.png);
+    background-size: 60%;
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+ul.slick-dots li button {
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+
+}
+
+ul.slick-dots li.slick-active {
+    font-size: 0;
+    border: none;
+    background-image: url(../img/maispata.png);
+    background-color: transparent;
+}

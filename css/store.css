@@ -1,0 +1,239 @@
+/*Importante fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Lobster', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+:root {
+    --pink: #FE9FFF
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: pink;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    user-select: none;
+    pointer-events: painted;
+    display: flex;
+
+}
+
+header .subtext {
+    color: white;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    pointer-events: painted;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    pointer-events: painted;
+}
+
+.brand {
+
+    text-align: center;
+    font-size: 30pt;
+    cursor: pointer;
+}
+
+.brand a {
+    color: black;
+}
+
+.brand a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    transition: .5s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+nav ul li p {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    user-select: none;
+    pointer-events: painted;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+
+
+}
+
+.menus .header-block {
+    max-width: 100vw;
+    min-width: 300px;
+    height: 35px;
+    border-radius: 10px;
+
+    position: relative;
+    z-index: 10;
+    padding: 0;
+}
+
+#procura {
+    background-color: rgba(255, 202, 239, 0.685);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 75px;
+    margin: 110px;
+    position: relative;
+    top: -175px;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: pink;
+
+}
+
+.search-button {
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: pink;
+    transition: 0.3s ease;
+    user-select: none;
+    pointer-events: painted;
+}
+
+.search-button:hover {
+    background-color: rgba(247, 95, 201, 0.685);
+    font-size: 13pt;
+    user-select: none;
+    pointer-events: painted;
+
+}
+
+#produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 71%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+}
+
+.produto {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.produto div {
+    padding: 10px;
+}
+
+.produto div p {
+    margin-bottom: 10px;
+}
+
+.produto div hr {
+    margin: 10px 0 10px 0;
+}
+
+.produto div button {
+    cursor: pointer;
+    width: 35%;
+    background-color: pink;
+    border-radius: 25px;
+    padding: 5px;
+    border: 1px pink solid;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(255, 157, 226, 0.685);
+    transition: .2s;
+    user-select: none;
+    pointer-events: painted;
+    color: black;
+    text-decoration: none;
+
+}
+
+.produto div button a {
+    color: black;
+    text-decoration: none;
+}
+
+.produto div button:hover {
+    background-color: rgba(247, 95, 201, 0.685);
+    font-size: 13pt;
+    user-select: none;
+    pointer-events: painted;
+    color: black;
+    text-decoration: none;
+
+}
